@@ -1,0 +1,8 @@
+-- 코드를 입력하세요
+    SELECT DISTINCT C.CART_ID
+    FROM CART_PRODUCTS AS C
+    WHERE C.NAME="Milk" AND C.CART_ID IN(
+        SELECT DISTINCT P.CART_ID
+        FROM CART_PRODUCTS AS P
+        WHERE P.NAME="Yogurt"
+    )
