@@ -5,7 +5,6 @@ def solution(numbers):
     while len(numberList) > 0:
         count += 1
         if(numberList[0]) == "z":
-            print("Z")
             answerList.append("0")
             numberList = numberList[4:]
         elif(numberList[0]) == "o":
